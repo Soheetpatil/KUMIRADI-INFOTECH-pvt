@@ -11,7 +11,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #e5e7eb;
+    background: #0a0a0a;
 }
 
 body.dark-mode {
@@ -26,7 +27,7 @@ html {
 /* services*/
 body {
   font-family: "Poppins", sans-serif;
-  background: #f8f9fa;
+  background: #0a0a0a;
   margin: 0;
   padding: 0;
 }
@@ -43,9 +44,10 @@ body {
 .section-title {
   font-size: 2rem;
   margin: 81px 0;
+  color: #ffffff;
 }
 .section-subtitle {
-  color: #007bff;
+  color: #3b82f6;
   font-weight: 600;
 }
 
@@ -56,11 +58,12 @@ body {
   gap: 25px;
 }
 .service-card {
-  background: #fff;
+  background: #1a1a1a;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   overflow: hidden;
   transition: transform 0.3s;
+  border: 1px solid #2a2a2a;
 }
 .service-card:hover {
   transform: translateY(-6px);
@@ -74,22 +77,28 @@ body {
   padding: 20px;
   text-align: center;
 }
+.service-content h3 {
+  color: #ffffff;
+}
+.service-content p {
+  color: #9ca3af;
+}
 .service-icon {
   font-size: 2rem;
-  color: #007bff;
+  color: #3b82f6;
   margin-bottom: 10px;
 }
 .btn-outline {
   background: none;
-  border: 2px solid #007bff;
-  color: #007bff;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
   padding: 8px 16px;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
 }
 .btn-outline:hover {
-  background: #007bff;
+  background: #3b82f6;
   color: #fff;
 }
 
@@ -110,15 +119,16 @@ body {
   to {opacity: 1;}
 }
 .modal-content {
-  background: #fff;
+  background: #1a1a1a;
   border-radius: 12px;
   width: 90%;
   max-width: 400px;   /* smaller width */
   padding: 20px;
   text-align: center;
   position: relative;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
   animation: zoomIn 0.3s;
+  border: 1px solid #2a2a2a;
 }
 @keyframes zoomIn {
   from {transform: scale(0.8);}
@@ -134,10 +144,11 @@ body {
 .modal h3 {
   margin-top: 5px;
   font-size: 1.4rem;
+  color: #ffffff;
 }
 .modal p {
   font-size: 0.95rem;
-  color: #555;
+  color: #9ca3af;
 }
 .close-btn {
   position: absolute;
@@ -145,11 +156,11 @@ body {
   left: 380px;
   font-size: 1.4rem;
   cursor: pointer;
-  color: #333;
+  color: #ffffff;
   transition: 0.2s;
 }
 .close-btn:hover {
-  color: #007bff;
+  color: #3b82f6;
 }
 
 .container {
@@ -217,15 +228,16 @@ flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
     padding: 12px 16px;
-    background: white;
-    color: #333;
+    background: #1a1a1a;
+    color: #e5e7eb;
     text-decoration: none;
     border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
     white-space: nowrap;
     font-size: 0.9rem;
     font-weight: 500;
+    border: 1px solid #2a2a2a;
 }
 
 .whatsapp-option:hover {
@@ -234,7 +246,7 @@ flex-direction: row-reverse;
 }
 
 .whatsapp-option.call {
-    background: #007bff;
+    background: #3b82f6;
     color: white;
 }
 
@@ -284,9 +296,10 @@ flex-direction: row-reverse;
     top: 0;
     left: 0;
     right: 0;
-    background: white;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    background: #0a0a0a;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    border-bottom: 1px solid #2a2a2a;
 
     /* ANIMATION: Header Fade Down on Load */
     opacity: 0;
@@ -307,7 +320,7 @@ flex-direction: row-reverse;
 }
 
 .logo h1 span {
-    color: #1f2937;
+    color: #ffffff;
 }
 
 .nav-desktop {
@@ -317,7 +330,7 @@ flex-direction: row-reverse;
 
 .nav-desktop a {
     text-decoration: none;
-    color: #374151;
+    color: #e5e7eb;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -332,7 +345,7 @@ flex-direction: row-reverse;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #374151;
+    color: #e5e7eb;
 }
 
 .nav-mobile {
@@ -353,9 +366,9 @@ flex-direction: row-reverse;
 
 .nav-mobile a {
     text-decoration: none;
-    color: #374151;
+    color: #e5e7eb;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #f3f4f6;
+    border-bottom: 1px solid #2a2a2a;
 }
 
 .nav-mobile a:last-child {
@@ -600,12 +613,13 @@ flex-direction: row-reverse;
 
 .service-card {
     width: 350px;
-    background: #fff;
+    background: #1a1a1a;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
+    border: 1px solid #2a2a2a;
 }
 
 .service-card:hover {
@@ -624,7 +638,7 @@ flex-direction: row-reverse;
 
 .service-icon {
     font-size: 2rem;
-    color: #007bff;
+    color: #3b82f6;
     margin-bottom: 10px;
 }
 
@@ -634,7 +648,7 @@ flex-direction: row-reverse;
 }
 
 .services-cta .btn-primary {
-    background: #007bff;
+    background: #3b82f6;
     color: #fff;
     border: none;
     padding: 12px 30px;
@@ -645,7 +659,7 @@ flex-direction: row-reverse;
 }
 
 .services-cta .btn-primary:hover {
-    background: #0056b3;
+    background: #2563eb;
 }
 
 /* Banner Section */
@@ -654,19 +668,20 @@ flex-direction: row-reverse;
     max-width: 900px;
     margin: 60px auto; /* centers horizontally */
     padding: 40px 20px;
-    background: #f8f9fa;
+    background: #1a1a1a;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2a2a2a;
 }
 
 .services-banner h3 {
     font-size: 1.8rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
 .services-banner p {
-    color: #555;
+    color: #9ca3af;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 25px;
@@ -674,8 +689,8 @@ flex-direction: row-reverse;
 
 .services-banner .btn-secondary {
     background: transparent;
-    border: 2px solid #007bff;
-    color: #007bff;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
     padding: 12px 30px;
     border-radius: 25px;
     font-size: 16px;
@@ -689,15 +704,15 @@ flex-direction: row-reverse;
 
 
 .services-banner .btn-secondary:hover {
-    background: #007bff;
+    background: #3b82f6;
     color: #fff;
 }
 
 
 .btn-outline {
     background: transparent;
-    border: 1.5px solid #007bff;
-    color: #007bff;
+    border: 1.5px solid #3b82f6;
+    color: #3b82f6;
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
@@ -705,7 +720,7 @@ flex-direction: row-reverse;
 }
 
 .btn-outline:hover {
-    background: #007bff;
+    background: #3b82f6;
     color: #fff;
 }
 
