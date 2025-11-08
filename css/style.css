@@ -305,14 +305,12 @@ flex-direction: row-reverse;
     top: 0;
     left: 0;
     right: 0;
-    background: #0a0a0a;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    background: #000000 !important;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.1);
     z-index: 1000;
-    border-bottom: 1px solid #2a2a2a;
-
-    /* ANIMATION: Header Fade Down on Load */
-    opacity: 0;
-    animation: fadeInDown 0.6s ease-out forwards;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .nav-wrapper {
@@ -325,11 +323,11 @@ flex-direction: row-reverse;
 .logo h1 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #3b82f6;
+    color: #ffffff !important;
 }
 
 .logo h1 span {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .nav-desktop {
@@ -339,13 +337,13 @@ flex-direction: row-reverse;
 
 .nav-desktop a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #ffffff !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-desktop a:hover {
-    color: #3b82f6;
+    color: #cccccc !important;
 }
 
 .mobile-menu-btn {
@@ -354,7 +352,11 @@ flex-direction: row-reverse;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #e5e7eb;
+    color: #ffffff !important;
+}
+
+.mobile-menu-btn i {
+    color: #ffffff !important;
 }
 
 .nav-mobile {
@@ -362,6 +364,7 @@ flex-direction: row-reverse;
     flex-direction: column;
     gap: 1rem;
     padding-bottom: 1rem;
+    background: #000000;
     /* Basic animation for mobile menu */
     max-height: 0;
     overflow: hidden;
@@ -371,13 +374,14 @@ flex-direction: row-reverse;
 .nav-mobile.show {
     display: flex;
     max-height: 500px; /* Adjust based on content size */
+    background: #000000;
 }
 
 .nav-mobile a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #ffffff !important;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-mobile a:last-child {
@@ -388,6 +392,34 @@ flex-direction: row-reverse;
     margin-top: 1rem;
 }
 
+.nav-cta {
+    display: flex;
+    align-items: center;
+}
+
+/* Additional header text visibility */
+.header * {
+    color: #ffffff !important;
+}
+
+.header .btn-primary {
+    background: #3b82f6 !important;
+    color: #ffffff !important;
+}
+
+.header .btn-primary i {
+    color: #ffffff !important;
+}
+
+.header .logo,
+.header .logo h1,
+.header .logo h1 span,
+.header .nav-desktop a,
+.header .mobile-menu-btn,
+.header .mobile-menu-btn i {
+    color: #ffffff !important;
+}
+
 /* Button Styles */
 .btn-primary, .btn-outline, .btn-secondary {
     padding: 0.75rem 1.5rem;
@@ -404,58 +436,14 @@ flex-direction: row-reverse;
 
 .btn-primary {
     background: #3b82f6;
-    color: white;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .btn-primary:hover {
     background: #2563eb;
-    transform: translateY(-1px);
-}
-
-.btn-outline {
-    background: transparent;
-    color: #3b82f6;
-    border: 2px solid #3b82f6;
-}
-
-.btn-outline:hover {
-    background: #3b82f6;
-    color: white;
-}
-
-.btn-secondary {
-    background: white;
-    color: #3b82f6;
-}
-
-.btn-secondary:hover {
-    background: #f3f4f6;
-}
-
-/* Button Styles */
-.btn-primary, .btn-outline, .btn-secondary {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-}
-
-.btn-primary {
-    background: #ffffff;
-    color: #000000;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
-}
-
-.btn-primary:hover {
-    background: #e0e0e0;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
 }
 
 .btn-outline {

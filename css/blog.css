@@ -316,10 +316,10 @@ flex-direction: row-reverse;
     top: 0;
     left: 0;
     right: 0;
-    background: #0a0a0a;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    background: #000000 !important;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.2);
     z-index: 1000;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #ffffff;
 
     /* ANIMATION: Header Fade Down on Load */
     opacity: 0;
@@ -336,11 +336,11 @@ flex-direction: row-reverse;
 .logo h1 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #3b82f6;
+    color: #ffffff !important;
 }
 
 .logo h1 span {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .nav-desktop {
@@ -350,13 +350,13 @@ flex-direction: row-reverse;
 
 .nav-desktop a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #ffffff !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-desktop a:hover {
-    color: #3b82f6;
+    color: #cccccc !important;
 }
 
 .mobile-menu-btn {
@@ -365,7 +365,7 @@ flex-direction: row-reverse;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #e5e7eb;
+    color: #ffffff !important;
 }
 
 .nav-mobile {
@@ -386,9 +386,9 @@ flex-direction: row-reverse;
 
 .nav-mobile a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #ffffff !important;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #ffffff;
 }
 
 .nav-mobile a:last-child {
@@ -400,7 +400,7 @@ flex-direction: row-reverse;
 }
 
 /* Button Styles */
-.btn-primary, .btn-outline, .btn-secondary {
+.btn-primary, .btn-secondary {
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
@@ -415,36 +415,11 @@ flex-direction: row-reverse;
 
 .btn-primary {
     background: #3b82f6;
-    color: white;
+    color: #ffffff !important;
 }
 
 .btn-primary:hover {
     background: #2563eb;
-    transform: translateY(-1px);
-}
-
-.btn-outline {
-    background: transparent;
-    color: #3b82f6;
-    border: 2px solid #3b82f6;
-}
-
-.btn-outline:hover {
-    background: #3b82f6;
-    color: white;
-}
-
-.btn-secondary {
-    background: white;
-    color: #3b82f6;
-}
-
-.btn-secondary:hover {
-    background: #f3f4f6;
-}
-
-.btn-primary:hover {
-    background: #cccccc;
     transform: translateY(-1px);
 }
 
