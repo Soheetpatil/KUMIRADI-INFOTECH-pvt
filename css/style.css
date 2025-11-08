@@ -1375,7 +1375,7 @@ blockquote {
 
 /* Footer */
 .footer {
-    background: #1f2937;
+    background: #1f2937 !important;
     color: white;
     padding: 4rem 0 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1521,7 +1521,7 @@ blockquote {
 .footer-bottom {
     border-top: 1px solid #374151;
     padding: 1.5rem 0;
-    background: #1f2937;
+    background: #1f2937 !important;
 }
 
 .footer-bottom-content {
