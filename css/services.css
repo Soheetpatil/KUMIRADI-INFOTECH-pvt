@@ -1254,8 +1254,8 @@ blockquote {
 }
 
 .newsletter input {
-    background: #374151;
-    border: 1px solid #4b5563;
+    background: #1f2937;
+    border: 1px solid #374151;
     border-radius: 0.5rem;
     padding: 0.75rem 1rem;
     color: white;
@@ -1285,6 +1285,7 @@ blockquote {
 .footer-bottom {
     border-top: 1px solid #374151;
     padding: 1.5rem 0;
+    background: #1f2937;
 }
 
 .footer-bottom-content {
